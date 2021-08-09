@@ -54,7 +54,7 @@ func TipHostname(aerospikePolicy *aero.ClientPolicy, asConn *ASConn, address str
 // AlumniReset runs tip clear
 func AlumniReset(aerospikePolicy *aero.ClientPolicy, asConn *ASConn) error {
 	res, err := RunInfo(aerospikePolicy, asConn, "services-alumni-reset")
-	pkglog.Info("TipClearHostname", log.Ctx{"res": res})
+	pkglog.Info("AlumniReset", log.Ctx{"res": res})
 	return err
 }
 
